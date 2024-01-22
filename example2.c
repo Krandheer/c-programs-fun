@@ -15,5 +15,5 @@ int main() {
   printf("Floor is %d\n", euf);
 
   int a = 2;  int b = 3;
-  printf("%d", power(a, b));
+  printf("%d\n", power(a, b));
 }
