@@ -12,8 +12,7 @@ int main() {
   int usf, euf;
   printf("Enter floor number\n");
   scanf("%d", &usf);
+  euf = usf - 1;
   printf("Floor is %d\n", euf);
-
-  int a = 2;  int b = 3;
-  printf("%d\n", power(a, b));
+  printf("%d\n", power(2, 4));
 }
