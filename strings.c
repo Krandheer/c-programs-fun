@@ -1,5 +1,7 @@
-#include <string.h>
 #include <stdio.h>
-char name[] = "sunita";
-int a = strlen(name);
-printf("%d\n", a);
+#include <string.h>
+int main()
+{
+    char s[]="sunita";
+    printf("%lu\n", strlen(s));
+}
