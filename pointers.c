@@ -3,8 +3,9 @@
 void func(int a, int *b) {
   a = 1;
   printf("address of y that is passed to reference b is: %p\n", b);
-  *b = 2; /* reference to a memory address where w is being put */
-  printf("called from func\n");
+  // value of y should be replaced by 2 in main function
+  *b = 2; /* reference to a memory address where 2 is being put */
+  printf("\ncalled from func");
   printf("%d adress of reference b is: %p\n", a, &b);
 }
 int main() {
