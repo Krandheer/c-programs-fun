@@ -19,6 +19,7 @@ float point_origin(const struct Point *self) {
 }
 void point_del(const struct Point *self) { free((void *)(self)); }
 
+// construct of the object
 struct Point *point_new(int x, int y) {
   struct Point *p = malloc(sizeof(*p));
   p->x = x;
@@ -34,5 +35,5 @@ int main() {
   struct Point *pt = point_new(3, 4);
   pt->dump(pt);
   printf("Origin %f\n", pt->origin(pt));
-    pt->del(pt);
+  pt->del(pt);
 }
