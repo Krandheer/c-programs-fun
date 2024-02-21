@@ -19,11 +19,13 @@ float point_origin(const struct Point *self) {
 }
 void point_del(const struct Point *self) { free((void *)(self)); }
 
-// construct of the object
+// constructor of the object point
 struct Point *point_new(int x, int y) {
   struct Point *p = malloc(sizeof(*p));
   p->x = x;
   p->y = y;
+
+// functions are defined above which becomes method inside this constructor
   p->dump = &point_dump;
   p->origin = &point_origin;
   p->del = &point_del;
