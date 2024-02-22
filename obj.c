@@ -25,7 +25,7 @@ struct Point *point_new(int x, int y) {
   p->x = x;
   p->y = y;
 
-// functions are defined above which becomes method inside this constructor
+  // functions are defined above which becomes method inside this constructor
   p->dump = &point_dump;
   p->origin = &point_origin;
   p->del = &point_del;
