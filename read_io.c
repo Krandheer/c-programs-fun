@@ -8,15 +8,20 @@ void read_char() {
   while ((c = fgetc(fp)) != EOF) {
     printf("%c", c);
   }
+
+  fclose(fp);
 }
 
 void read_by_line() {
   FILE *fp;
   fp = fopen("para.txt", "r");
+
   char s[1024];
   while ((fgets(s, sizeof(s), fp)) != NULL) {
     printf("%s", s);
   }
+
+  fclose(fp);
 }
 
 int main() {
