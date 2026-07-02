@@ -15,10 +15,12 @@ void read_char() {
 void read_by_line() {
   FILE *fp;
   fp = fopen("para.txt", "r");
+  int lineCount;
 
   char s[1024];
   while ((fgets(s, sizeof(s), fp)) != NULL) {
-    printf("%s", s);
+    lineCount++;
+    printf("%d: %s", lineCount, s);
   }
 
   fclose(fp);
